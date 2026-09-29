@@ -1,0 +1,6 @@
+hindsight-client
+groq
+streamlit
+python-dotenv
+fastapi
+uvicorn[standard]

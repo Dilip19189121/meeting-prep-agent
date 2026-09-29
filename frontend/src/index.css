@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-teal: #4A7A84;
+  --color-brand-tealDark: #3A636C;
+  --color-brand-tealLight: #E8F1F2;
+  --color-brand-sand: #EFECE6;
+  --color-brand-wood: #C8A97E;
+  --color-brand-woodDark: #8F6B43;
+  --color-brand-charcoal: #22292F;
+  --color-brand-slateText: #4A5568;
+  --color-brand-surface: #FBFBF9;
+  --color-brand-cardBg: #FFFFFF;
+  --color-brand-borderMuted: #E2E8F0;
+
+  --font-sans: "Hiragino Sans", "Noto Sans JP", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: "Hiragino Mincho ProN", Georgia, serif;
+
+  --tracking-architectural: 0.22em;
+  --tracking-editorial: 0.12em;
+}
+
+/* Architectural watermark typography inspired by reference BRIGHT AVENUE */
+.architectural-watermark {
+  font-size: clamp(4.5rem, 15vw, 15rem);
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 0.85;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.72) 0%, rgba(255, 255, 255, 0.18) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Ambient sunlight overlay mimicking Japanese natural daylight interior */
+.sunlight-glow {
+  background: radial-gradient(circle at 85% 25%, rgba(255, 248, 230, 0.55) 0%, rgba(255, 255, 255, 0) 65%);
+}
+
+/* Frosted backdrop panels */
+.glass-card {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.glass-pill {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}

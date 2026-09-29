@@ -1,0 +1,6 @@
+{
+  "name": "MeetMind",
+  "description": "Reliability architecture and cognitive memory console that never forgets a promise you made.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
